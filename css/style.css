@@ -15,9 +15,8 @@ body{
 }
 .navbar-container{
     display: flex;
-    margin-left: 60px;
-    
-   
+    justify-content: space-between;
+    margin-left: 60px; 
 }
 .navigation{
     display: flex;
@@ -28,6 +27,10 @@ body{
     margin-left: -20px;
     position: absolute;
     font-size: 15px;
+}
+.bar{
+  display: none;
+  margin-right: 20px;
 }
 .Contact{
     display: flex;
@@ -69,8 +72,8 @@ li {
     }
     .heading{
         font-size: 45px;
-        margin:0px 40px 0px 40px;
-        padding-right: 100px;
+        margin:20vh 40px 0px 40px;
+        width: 100vh;
         font-weight: 200;
     }
     .dialog-box1{
@@ -80,12 +83,16 @@ li {
         width: 260px;
         height: 160px;
         background-color: rgb(255, 255, 255, .2);
+        position: absolute;
+        right: 3%;
+        top: 20%;
     }
     .vertical-line {
         border-left: 2px solid #ffffff;
         height: 60px;
         position: absolute;
         right: 14%;
+        top: 40%;
       }
       .dot{
       width:20px;
@@ -94,9 +101,9 @@ li {
       background-color: #ffffff;     
       }
       .first{
-        position: relative;
-        left: 48%;
-        top: 14%;
+        position: absolute;
+        right: 13%;
+        top: 45%;
       }
       .learn{
         margin-top: -10px;
@@ -108,6 +115,7 @@ li {
         background-color: rgb(255, 255, 255, .2);
         position: absolute;
         right: 30%;
+        top: 60%;
         padding: 20px 40px 20px 40px;
       }
       img[src="./images/bulb-pngrepo-com.png"]{
@@ -132,4 +140,109 @@ width: 40px;
         position: absolute;
         right: 26%;
         bottom: 29%;
+      }
+      @media screen and (max-width:1490px){
+        .heading{
+          font-size: 35px;
+         
+          width: 80vh;
+          font-weight: 200;
+      }
+      }
+      @media screen and (max-width:1270px){
+        
+        .navigation{
+          display: none;
+        }
+        .bar{
+          display:flex;
+          float: right;
+          font-size: 40px;
+          margin-top: 20px;
+        }
+        .dialog-box1{
+          margin-top: 40px;
+         margin-right: 20px;
+         padding-left: 30px;
+          width: 260px;
+          height: 160px;
+          background-color: rgb(255, 255, 255, .2);
+          position: absolute;
+          right: 3%;
+          top: 20%;
+      }
+      .vertical-line {
+          border-left: 2px solid #ffffff;
+          height: 60px;
+          position: absolute;
+          right: 14%;
+          top: 40%;
+        }
+        .horizontal-line{
+          width: 48px;
+          background-color: #ffffff;
+          height: 1px;
+          position: absolute;
+          right: 26%;
+          bottom: 30%;
+        }
+        .second{
+          position: absolute;
+          right: 25%;
+          bottom: 29%;
+        }
+      }
+      @media screen and (max-width:1150px){
+        .vertical-line{
+          display: none;
+        }
+        .horizontal-line{
+          display: none;
+        }
+        .dot{
+          display: none;
+        }
+        .heading{
+          margin-top: 30vh;
+        }
+        .dialog-box2{
+          top: 75%;
+          margin-top: 5%;
+        }
+      }
+      @media screen and (max-width:680px){
+        .heading{
+          font-size: 25px;
+          margin-top:20vh ;
+        }
+        .dialog-box2{
+          top: 70%;
+          margin-top: 5%;
+        }
+        .navigation{
+          margin-top: 25vh;
+        }
+        .dialog-box1{
+          top: 10%;
+          
+        }
+      }
+      @media screen and (max-width:460px){
+    
+      .heading{
+        font-size: 20px;
+        margin-top:30vh ;
+              }
+      .dialog-box2{
+        top: 70%;
+        right: 8%;
+        margin-top: 5vh;
+      }
+     
+      .dialog-box1{
+        top: 15%;
+      }
+      .navbar-container{
+        margin-left: 10px; 
+    }
       }
