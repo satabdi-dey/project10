@@ -149,7 +149,21 @@ width: 40px;
           font-weight: 200;
       }
       }
+      @media screen and (max-height:900px) {
+        .vertical-line {
+          border-left: 2px solid #ffffff;
+          height: 60px;
+          position: absolute;
+          right: 12%;
+          top: 49%;
+        }
+        .first{
+          right: 11%;
+            top: 55%;
+        }
+      }
       @media screen and (max-width:1270px){
+        
         
         .navigation{
           display: none;
@@ -175,8 +189,12 @@ width: 40px;
           border-left: 2px solid #ffffff;
           height: 60px;
           position: absolute;
-          right: 14%;
-          top: 40%;
+          right: 10%;
+          top: 45%;
+        }
+        .first{
+          right: 9%;
+            top: 51%;
         }
         .horizontal-line{
           width: 48px;
