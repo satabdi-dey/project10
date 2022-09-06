@@ -148,6 +148,7 @@ width: 40px;
           width: 80vh;
           font-weight: 200;
       }
+      
       }
       @media screen and (max-height:865px) {
         .vertical-line {
@@ -160,6 +161,24 @@ width: 40px;
         .first{
           right: 23vh;
             top: 49%;
+        }
+        .dialog-box2{
+          top: 70%;
+          right: 30%;
+          margin-top: 5vh;
+        }
+        .horizontal-line{
+          width: 48px;
+          background-color: #ffffff;
+          height: 1px;
+          position: absolute;
+          right: 27%;
+          top: 80%;
+        }
+        .second{
+          position: absolute;
+          right: 26%;
+          top: 79%;
         }
       }
       @media screen and (max-height:802px) {
